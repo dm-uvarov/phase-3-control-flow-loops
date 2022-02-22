@@ -1,5 +1,9 @@
 def happy_new_year
-  # your code here
+  a=*(1..10)
+  while a.size != 0
+    puts(a.pop.to_s)
+  end
+  puts "Happy New Year!"
 end
 
 # No need to modify this code! Use this to implement the fizzbuzz_printer method.
@@ -16,9 +20,14 @@ def fizzbuzz(num)
 end
 
 def fizzbuzz_printer
-  # your code here
+  (1...101).each do |i| 
+    puts fizzbuzz(i).to_s
+  end
+  
 end
 
 def reverse_string(str)
-  # your code here
+  a =[]
+  str.split("").map{|l| a.unshift(l) }
+  a.join("")
 end
